@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7839494153984990669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be3da09dce1f77449fd37d1772d76bd, type: 3}
+  m_Name: BehaviorMovePiece
+  m_EditorClassIdentifier: 
+  guid: ee61013d620ce4a40915ca7f964ecbd1
+  positionInGuid: {x: 351.25052, y: -107.00003}
+  behaviourListener: {fileID: 0}
+  state: 0
+  started: 0
+  child: {fileID: -5898110223808676780}
+  currentBehaviourState: 0
+  targetDirection: 0
+  currentPos: {x: 0, y: 0}
+  allowFriendlyFire: 0
+--- !u!114 &-7148640637733942677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d6948e6a033e64eaf5e1784bc05b26, type: 3}
+  m_Name: BehaviorAttackAdjacentTile
+  m_EditorClassIdentifier: 
+  guid: c84228ad4cc17bf4abe7aae3f61751a0
+  positionInGuid: {x: 766.327, y: 95.00004}
+  behaviourListener: {fileID: 0}
+  state: 0
+  started: 0
+  child: {fileID: 0}
+  currentBehaviourState: 0
+  targetDirection: 0
+  damageOfTheAttack: 1
+  currentPos: {x: 0, y: 0}
+--- !u!114 &-5937110429458009814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be3da09dce1f77449fd37d1772d76bd, type: 3}
+  m_Name: BehaviorMovePiece
+  m_EditorClassIdentifier: 
+  guid: 11f30b2486b63f640b5e7a7f13b278e6
+  positionInGuid: {x: 522.9997, y: 72.87511}
+  behaviourListener: {fileID: 0}
+  state: 0
+  started: 0
+  child: {fileID: 0}
+  currentBehaviourState: 0
+  targetDirection: 0
+  currentPos: {x: 0, y: 0}
+  allowFriendlyFire: 0
+--- !u!114 &-5898110223808676780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 230c96b7a8e00744fbcc154fe9c5dce4, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  guid: 0cd9538cae7d504409d44b1ab2883b19
+  positionInGuid: {x: 557, y: -107.00003}
+  behaviourListener: {fileID: 0}
+  state: 0
+  started: 0
+  children:
+  - {fileID: -5937110429458009814}
+  - {fileID: -7148640637733942677}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd023a4fc5a4c44abc993deeca6b3b3, type: 3}
+  m_Name: Video Demonstration
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 3894194828776916870}
+  treeState: 0
+  nodes:
+  - {fileID: 3894194828776916870}
+  - {fileID: -7839494153984990669}
+  - {fileID: -5898110223808676780}
+  - {fileID: -5937110429458009814}
+  - {fileID: -7148640637733942677}
+  behaviourListener: {fileID: 0}
+--- !u!114 &3894194828776916870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3196fb7cb44ab42ac75c453fa2906a, type: 3}
+  m_Name: TriggerNode
+  m_EditorClassIdentifier: 
+  guid: 308da0bcc25949545ac89d95253e0437
+  positionInGuid: {x: 121.92401, y: -107.00003}
+  behaviourListener: {fileID: 0}
+  state: 0
+  started: 0
+  child: {fileID: -7839494153984990669}

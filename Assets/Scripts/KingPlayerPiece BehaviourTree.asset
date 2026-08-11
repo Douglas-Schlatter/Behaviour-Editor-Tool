@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6710216162976859537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3196fb7cb44ab42ac75c453fa2906a, type: 3}
+  m_Name: TriggerNode
+  m_EditorClassIdentifier: 
+  guid: 29ece72033626c04d858265830aa97bf
+  positionInGuid: {x: -18.399994, y: -123.05002}
+  behaviourListener: {fileID: 0}
+  state: 0
+  started: 0
+  child: {fileID: -4951482473400949853}
+--- !u!114 &-4951482473400949853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be3da09dce1f77449fd37d1772d76bd, type: 3}
+  m_Name: BehaviorMovePiece
+  m_EditorClassIdentifier: 
+  guid: 5d28a027606d79a4e9ad704ae8bb4b05
+  positionInGuid: {x: 169.45004, y: -123.00001}
+  behaviourListener: {fileID: 0}
+  state: 0
+  started: 0
+  child: {fileID: -3157303807335657380}
+  currentBehaviourState: 0
+  targetDirection: 0
+  currentPos: {x: 0, y: 0}
+  allowFriendlyFire: 0
+--- !u!114 &-3157303807335657380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d6948e6a033e64eaf5e1784bc05b26, type: 3}
+  m_Name: BehaviorAttackAdjacentTile
+  m_EditorClassIdentifier: 
+  guid: 4afacfed8f2b747488cd53b1d2a48f7e
+  positionInGuid: {x: 421.13, y: -123.00001}
+  behaviourListener: {fileID: 0}
+  state: 0
+  started: 0
+  child: {fileID: 0}
+  currentBehaviourState: 0
+  targetDirection: 0
+  damageOfTheAttack: 1
+  currentPos: {x: 0, y: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd023a4fc5a4c44abc993deeca6b3b3, type: 3}
+  m_Name: KingPlayerPiece BehaviourTree
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: -6710216162976859537}
+  treeState: 0
+  nodes:
+  - {fileID: -6710216162976859537}
+  - {fileID: -4951482473400949853}
+  - {fileID: -3157303807335657380}
+  behaviourListener: {fileID: 0}
